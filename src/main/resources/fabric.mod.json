@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "pearlcraft",
+	"version": "${version}",
+	"name": "PearlCraft",
+	"description": "This mod adds unique pearls that have special abilities.",
+	"authors": [
+		"YoureAHotFishy"
+	],
+	"contact": {
+		"homepage": "https://github.com/YoureAHotFishy/",
+		"sources": "https://github.com/YoureAHotFishy/PearlCraft"
+	},
+	"license": "MIT",
+	"icon": "assets/pearlcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.youreahotfishy.fabric.pearlcraft.Main"
+		],
+		"fabric-datagen": [
+          "me.youreahotfishy.fabric.pearlcraft.DataGen"
+		]
+	},
+	"mixins": [
+		"pearlcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
